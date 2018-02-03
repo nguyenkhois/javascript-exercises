@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7</title>
+</head>
+
+<body>
+    <h1>Exercise 7</h1>
+
+    <p id="displayDateTime"></p>
+
+    <div id="stretch_task_1">
+        <form action="#">
+            <h2>Stretch task 1</h2>
+            <p>Enter the day follow format DD/MM/YYYY</p>
+            <label for="st1Date">Date</label>
+            <input id="st1Date" type="number" minlength="2" maxlength="2" min="1" max="31" required>
+
+            <label for="st1Month">Month</label>
+            <input id="st1Month" type="number" minlength="2" maxlength="2" min="1" max="12" required>
+
+            <label for="st1Year">Year</label>
+            <input id="st1Year" type="number" minlength="4" maxlength="4" min="1900" max="2018" required>
+
+            <button id="viewDay" type="submit">View week day</button>
+            <p id="st1InputDay"></p>
+            <p id="displayWeekDay"></p>
+        </form>
+    </div>
+
+    <div id="stretch_task_2">
+        <h2>Stretch task 2</h2>
+        <p id="displayCurrentTime"></p>
+    </div>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
