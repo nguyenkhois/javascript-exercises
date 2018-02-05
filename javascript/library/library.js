@@ -23,3 +23,7 @@ function getCurrentTime() {
 function convertStringToNumber(sNumber, fractionDigits) {
     return parseFloat(Number(sNumber).toFixed(fractionDigits));
 }
+
+function getRandomNumber(minNr, maxNr) {
+    return Math.floor(Math.random()*(maxNr-minNr+1)) + minNr;
+}
