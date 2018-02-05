@@ -1,19 +1,19 @@
 var minID = 1;
 var maxID = 3;
-var userIDRandom = getRandomNumber(minID,maxID);
+var randomNumber = getRandomNumber(minID,maxID);
 
-document.getElementById("displayUserID").innerHTML = userIDRandom;
+/*document.getElementById("displayRandomNumber").innerHTML = randomNumber;*/
 
-let btnCheckUserID = document.getElementById("btnCheckUserID");
-btnCheckUserID.addEventListener("click", function () {
-    let txtUserIDInput = convertStringToNumber(document.getElementById("txtUserIDInput").value);
-    if (txtUserIDInput === userIDRandom){
-        alert("Your ID is right!");
-    }else if (txtUserIDInput < minID){
-        alert("Your ID is false! IT'S TOO LOW!");
-    }else if (txtUserIDInput > maxID){
-        alert("Your ID is false! IT'S TOO HIGH!");
+let btnCheckNumber = document.getElementById("btnCheckNumber");
+btnCheckNumber.addEventListener("click", function () {
+    let txtNumberInput = convertStringToNumber(document.getElementById("txtNumberInput").value);
+    if (txtNumberInput === randomNumber){
+        alert("Your answer is right!");
+    }else if (txtNumberInput < minID){
+        alert("Your answer is false! IT'S TOO LOW!");
+    }else if (txtNumberInput > maxID){
+        alert("Your answer is false! IT'S TOO HIGH!");
     }else{
-        alert("Your ID is false!");
+        alert("Your answer is false!");
     }
 });
